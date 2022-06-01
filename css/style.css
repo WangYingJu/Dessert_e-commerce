@@ -54,10 +54,10 @@ a, a:hover, a:visited, a:link, a:active {
 }
 
 .wrap {
-    width: 1024px;
+    max-width: 940px;
     margin: 0 auto;
-    padding: 30px 42px;
-    outline: 1px #000 solid;
+    padding: 30px 0;
+    /* outline: 1px #000 solid; */
 }
 
 .nav-bar {
@@ -86,8 +86,11 @@ a, a:hover, a:visited, a:link, a:active {
 .nav-bar .menu li{
     font-size: 16px;
     font-weight: 600;
-    text-align: left;
-    letter-spacing: 0;
+    opacity: 0.8;
+}
+
+.nav-bar .menu li:hover, .cart a:hover {
+    opacity: 1;
 }
 
 .nav-bar .menu li+li {
@@ -96,6 +99,7 @@ a, a:hover, a:visited, a:link, a:active {
 
 .cart a {
     display: block;
+    opacity: 0.8;
 }
 
 .cart img {
@@ -118,7 +122,7 @@ a, a:hover, a:visited, a:link, a:active {
 }
 
 .regimentation {
-    flex: 300px;
+    width: 300px;
 }
 
 .regimentation-title {
@@ -148,19 +152,12 @@ a, a:hover, a:visited, a:link, a:active {
 }
 
 .product-box {
-    flex: 640px;
-}
-
-.product-box ul{
+    width: 640px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
 }
 
 .product-card {
-    /* width: 300px; */
-    display: flex;
-    flex-direction: column;
     position: relative;
     margin-left: 20px;
     margin-bottom: 20px;
@@ -200,8 +197,6 @@ a, a:hover, a:visited, a:link, a:active {
 
 .product-info {
     display: flex;
-    /* width: 300px; */
-    justify-content: flex-end;
 }
 
 .info-style {
@@ -228,6 +223,7 @@ a, a:hover, a:visited, a:link, a:active {
 }
 
 .add-cart {
+    width: 100%;
     background-color: #eaf0ed;
     border: 0;
     cursor: pointer;
